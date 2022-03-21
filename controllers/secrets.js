@@ -39,7 +39,6 @@ const retrieveSecret = async (req, res) => {
       secret: foundSecret.value,
     });
   } catch (e) {
-    console.log("e: ", e);
     return res.sendStatus(500);
   }
 };
